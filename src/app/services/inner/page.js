@@ -42,9 +42,9 @@ export default function Inner() {
                     At Vazi, we are the go-to legal advisory for global
                     startups, specialising in early-stage and growth-oriented
                     companies to drive operational and legal excellence. With
-                    our seasoned team's wealth of experience and deep
-                    understanding of the entrepreneurial landscape, we're
-                    committed to your venture's success.
+                    our seasoned team&apos;s wealth of experience and deep
+                    understanding of the entrepreneurial landscape, we&apos;re
+                    committed to your venture&apos;s success.
                   </p>
                 </div>
                 <div className=" self-center">

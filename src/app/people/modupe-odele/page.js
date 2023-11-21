@@ -69,12 +69,12 @@ export default function LegalChild() {
               </h2>
               <div className=" max-w-[31rem] text-cgray">
                 <p>
-                  A Founding Partner at Vazi, Moe's current practice centers
-                  around Fundraising Advisory, Governance and Compliance, and
-                  Technology Transactions and Licensing. She also has a keen
-                  interest in Decentralized Finance (DeFi), Blockchain and
-                  Cryptocurrency, Smart Contracts, and DAOs, advising companies
-                  in the Web3 space.
+                  A Founding Partner at Vazi, Moe&apos;s current practice
+                  centers around Fundraising Advisory, Governance and
+                  Compliance, and Technology Transactions and Licensing. She
+                  also has a keen interest in Decentralized Finance (DeFi),
+                  Blockchain and Cryptocurrency, Smart Contracts, and DAOs,
+                  advising companies in the Web3 space.
                 </p>
 
                 <p className="mt-6">
