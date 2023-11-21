@@ -1,0 +1,135 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+@import url('https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#63B9C9] to-[#0995AE] bg-clip-text text-transparent; 
+  @apply h-[3rem]; 
+  
+}
+
+.gradient-text2 {
+  @apply bg-gradient-to-r from-[#63B9C9] to-[#0995AE] bg-clip-text text-transparent; 
+  @apply h-[3.2rem]; 
+  
+}
+
+.text-small {
+  @apply text-[12px] leading-[1.2] ; 
+   
+  
+}
+
+
+
+.gradient-card {
+  @apply bg-gradient-to-br from-white to-[#D4E5E8];
+}
+
+.text13{
+@apply text-[0.82rem];
+}
+
+.textgreen{
+  @apply text-[#027889];
+  }
+
+  .textgray{
+    @apply text-[#646464];
+    }
+
+    .textglink{
+      @apply text-[#1193A9];
+      }
+    
+
+.gradient-card2 {
+  @apply bg-gradient-to-br from-white to-[#EDECE9];
+}
+.gradient-button {
+  @apply backdrop-blur-[3px] bg-gradient-to-tr from-[rgba(207,235,240,0.82)] to-[rgb(165,206,212,1.00)] border border-[rgb(191,230,236)] ;
+}
+
+.gradient-card3 {
+  @apply backdrop-blur-[2px] bg-gradient-to-b from-[rgba(194,194,194,0.20)] to-[rgb(74,139,159,0.40)];
+}
+.gradient-blogpost {
+  @apply bg-gradient-to-t from-[rgb(254,177,1)] to-[rgba(237,239,240,0.4)]
+}
+
+
+
+.gradient-hero-span {
+  background-image: linear-gradient(to top, #FFD26A, #F8EED3);
+  @apply  bg-clip-text text-transparent;
+}
+
+.gradient-hero {
+  background-image: linear-gradient(to top,rgb(152, 219, 215), #FFFBEC);
+  @apply  bg-clip-text text-transparent h-[11rem];
+}
+
+.text-hero {
+ /* font-size: 6.2rem;*/
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+.text-outline {
+  -webkit-text-stroke-width: 1px; /* Set the width of the outline */
+  -webkit-text-stroke-color: #D8C59B; /* Set the color of the outline */
+  text-stroke-width: 1px; /* Set the width of the outline for non-webkit browsers */
+  text-stroke-color: #D8C59B; /* Set the color of the outline for non-webkit browsers */
+}
+
+.shape {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.shape::before {
+  border-radius: 100%;
+  position: absolute;
+  background: rgb(150, 14, 14);
+  right: -200px;
+  left: -200px;
+  top: -140px;
+  content: '';
+  bottom: 0;
+}
