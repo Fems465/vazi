@@ -205,8 +205,8 @@ export default function Home() {
             </div>
 
             <div className="px-[5%] py-4 max-w-[100%] mx-auto lg:my-6 flex gap-4 lg:gap-0 items-center justify-between  overflow-hidden">
-              <Marquee speed={80} pauseOnHover={true}>
-                <div className="flex gap-x-16">
+              <Marquee speed={80} pauseOnHover={true} autoFill={true}>
+                <div className="pl-10 flex gap-x-16">
                   <BrandImages logos={brandData} />
                 </div>
               </Marquee>
