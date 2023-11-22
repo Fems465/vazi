@@ -15,7 +15,7 @@ import featuredData from "@/components/data/featuredData";
 
 export default function Home() {
   return (
-    <main className="font-stark">
+    <main className="">
       <div>
         <HeroSection title="Powering Innovation with" cspan="legal expertise" />
       </div>

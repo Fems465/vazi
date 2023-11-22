@@ -11,7 +11,7 @@ const CardCarousel = ({ cards, slidesToShow }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: slidesToShow || 4, // Adjust the number of cards shown at a time
+    slidesToShow: slidesToShow || 5, // Adjust the number of cards shown at a time
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -23,6 +23,14 @@ const CardCarousel = ({ cards, slidesToShow }) => {
           slidesToShow: 4,
         },
       },
+
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+
       {
         breakpoint: 600,
         settings: {
