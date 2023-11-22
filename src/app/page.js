@@ -12,6 +12,7 @@ import brandData from "../components/data/brandData";
 import { cards } from "../components/CardData.js";
 import BrandImages from "@/components/BrandImages";
 import featuredData from "@/components/data/featuredData";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -204,7 +205,11 @@ export default function Home() {
             </div>
 
             <div className="px-[5%] py-4 max-w-[100%] mx-auto lg:my-6 flex gap-4 lg:gap-0 items-center justify-between  overflow-hidden">
-              <BrandImages logos={brandData} />
+              <Marquee speed={80} pauseOnHover={true}>
+                <div className="flex gap-x-16">
+                  <BrandImages logos={brandData} />
+                </div>
+              </Marquee>
             </div>
 
             <div className="  flex justify-center items-center">

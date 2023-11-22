@@ -55,6 +55,9 @@ body {
   
 }
 
+.active {
+  @apply relative  text-[13px] transition duration-500 text-white font-medium no-underline after:absolute after:block after:left-1/4 after:right-1/4  after:border after:border-white after:bottom-[-3px];
+}
 
 
 .gradient-card {

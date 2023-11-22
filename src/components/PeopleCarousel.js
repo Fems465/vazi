@@ -54,10 +54,10 @@ const Carousel = ({ people }) => {
             <path
               d="M2.04175 15.7759L10.5602 9.08283L2.04175 2.38978"
               stroke="#1794A9"
-              stroke-opacity="0.4"
-              stroke-width="3.65076"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeOpacity="0.4"
+              strokeWidth="3.65076"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>

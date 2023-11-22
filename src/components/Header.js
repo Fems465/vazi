@@ -3,8 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
   const [isMobileMenuVisible, setMobileMenuVisibility] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -23,23 +25,38 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex mx-auto space-x-5">
-            <Link href={"/"} className="alink">
+            <Link
+              href={"/"}
+              className={pathname === "/" ? "active" : "" + "alink"}
+            >
               Home
             </Link>
             <img src="/ellipse.svg" className="w-[3px]  inline-flex" />
-            <Link href={"/about"} className="alink">
+            <Link
+              href={"/about"}
+              className={pathname === "/about" ? "active" : "" + "alink"}
+            >
               About
             </Link>
             <img src="/ellipse.svg" className="w-[3px]  inline-flex" />
-            <Link href={"/services"} className="alink">
+            <Link
+              href={"/services"}
+              className={pathname === "/services" ? "active" : "" + "alink"}
+            >
               Services
             </Link>
             <img src="/ellipse.svg" className="w-[3px]  inline-flex" />
-            <Link href={"/people"} className="alink">
+            <Link
+              href={"/people"}
+              className={pathname.includes("/people") ? "active" : "" + "alink"}
+            >
               People
             </Link>
             <img src="/ellipse.svg" className="w-[3px] inline-flex" />
-            <Link href={"/blog"} className="alink">
+            <Link
+              href={"/blog"}
+              className={pathname === "/blog" ? "active" : "" + "alink"}
+            >
               Blog
             </Link>
           </div>
