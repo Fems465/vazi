@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <section className=" w-full text-center max-h-fit mt-[5%] align-middle ">
-        <div className="container ">
+        <div className="container">
           <div className="flex items-center justify-center gap-2 lg:gap-12 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className=" mt-10  max-w-6xl mx-auto  items-center overflow-hidden">
+          <div className="  mt-10  w-[24rem] md:w-[48rem] lg:w-[58rem] xl:w-[70rem]  mx-auto  items-center overflow-hidden">
             <CardCarousel cards={cards} />
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function Home() {
               </svg>
             </div>
 
-            <div className="px-[5%] py-4 max-w-[100%] mx-auto lg:my-6 flex gap-4 lg:gap-0 items-center justify-between">
+            <div className="px-[5%] py-4 max-w-[100%] mx-auto lg:my-6 flex gap-4 lg:gap-0 items-center justify-between  overflow-hidden">
               <BrandImages logos={brandData} />
             </div>
 
@@ -257,7 +257,7 @@ export default function Home() {
             content1="demystifying legal processes by proffering innovative and unique solutions to each client."
             subtitle2="We recognise the dynamic nature of the modern business landscape and are"
             content2="committed to evolving and adapting to changing realities."
-            titleWidth="w-44 lg:w-[17rem]"
+            titleWidth="w-48 lg:w-[17rem]"
             textsize="text-2xl lg:text-3xl"
           />
         </section>
@@ -324,7 +324,7 @@ export default function Home() {
               </svg>
             </div>
 
-            <div className="px-[10%] max-w-[100%] mx-auto flex mb-3 justify-center items-center gap-8 lg:gap-16">
+            <div className="px-[10%] max-w-[100%] mx-auto flex mb-3 justify-center items-center gap-8 lg:gap-16 overflow-hidden">
               <BrandImages logos={featuredData} />
             </div>
 

@@ -8,7 +8,7 @@ const BrandImages = ({ logos }) => (
       <img
         key={index}
         src={logo.src}
-        className="w-[2rem] lg:w-[8rem]"
+        className="w-[5rem] mx-3 lg:mx-5 xl:mx-0 lg:w-[8rem]"
         alt={logo.alt}
       />
     ))}

@@ -43,6 +43,12 @@ body {
   
 }
 
+.gradient-text3 {
+  @apply bg-gradient-to-r from-[#63B9C9] to-[#0995AE] bg-clip-text text-transparent; 
+  
+  
+}
+
 .gradient-text2 {
   @apply bg-gradient-to-r from-[#63B9C9] to-[#0995AE] bg-clip-text text-transparent; 
   @apply h-[3.2rem]; 

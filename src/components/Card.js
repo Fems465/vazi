@@ -2,10 +2,10 @@
 import Link from "next/link";
 
 const Card = ({ title, imageUrl, link }) => (
-  <div className="w-[11rem] mx-auto lg:w-[195px] gradient-card rounded-2xl  pt-4 pb-4 text-left font-stark border">
+  <div className="w-[11rem] mx-auto lg:mx-auto lg:w-[195px] gradient-card rounded-2xl  pt-4 pb-4 text-left font-stark border">
     <div className="pl-4 pr-6">
       <img src={imageUrl} className="w-10 mb-4 mt-7" alt="Icon" />
-      <h3 className=" leading-none tracking-tight lg:leading-tight text-[1.05rem] lg:text-[19px] font-bold   mb-5 gradient-text ">
+      <h3 className=" leading-none tracking-tight lg:leading-tight text-[1.05rem] lg:text-[19px] font-bold mb-1  lg:mb-5 gradient-text ">
         {title}
       </h3>
     </div>

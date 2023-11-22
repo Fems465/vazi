@@ -28,5 +28,11 @@ export const cards = [
     link: "/card1",
   },
 
+  {
+    title: "Frontier Technology",
+    imageUrl: "/cards/company-secretarial.svg", // replace with the actual image path
+    link: "/card1",
+  },
+
   // Add more cards as needed
 ];

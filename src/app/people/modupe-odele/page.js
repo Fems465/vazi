@@ -11,10 +11,10 @@ export default function LegalChild() {
       <div>
         <Header />
       </div>
-      <section className="py-24">
+      <section className="pt-32 pb-20 lg:py-24 px-5">
         <div className="container">
           <div className="">
-            <div className="max-w-[54.8rem] border mx-auto rounded-xl px-12 gradient-card3 pt-8">
+            <div className="max-w-[54.8rem] h-[] border mx-auto rounded-xl px-5 lg:px-12 gradient-card3 pt-8">
               <Link
                 href={"/legal-team"}
                 className="text-xs inline-flex gap-1 text-[#6F898C] items-center "
@@ -33,26 +33,29 @@ export default function LegalChild() {
                 </svg>
                 People
               </Link>
-              <div className="flex mt-6 justify-between ">
-                <div className="mt-8 max-w-md">
-                  <h2 className="text-4xl text-[#00A9C6] font-bold ">
+              <div className="flex mt-6 justify-between  ">
+                <div className=" lg:mt-8 max-w-md">
+                  <h2 className=" text-3xl lg:text-4xl text-[#00A9C6] font-bold ">
                     Modupe Odele
                   </h2>
-                  <p className="mt-1 text-base text-[#8CA8AD]">
+                  <p className="mt-1 text-sm lg:text-base text-[#8CA8AD]">
                     Manager Partner
                   </p>
 
                   <div className="mt-6">
                     <Link
                       href={"/"}
-                      className=" px-6 py-2.5 bg-gradient-to-r from-[#FFDE98] to-[#FFB100] hover:from-[#0037402d] hover:to-[#5bcedf5b] text-sm font-medium text-[#A87807] rounded-sm"
+                      className=" px-5 lg:px-6 py-2 lg:py-2.5 bg-gradient-to-r from-[#FFDE98] to-[#FFB100] hover:from-[#0037402d] hover:to-[#5bcedf5b] text-xs lg:text-sm font-medium text-[#A87807] rounded-sm"
                     >
                       Contact
                     </Link>
                   </div>
                 </div>
                 <div className=" self-center">
-                  <img src="/people/modupe.png" className="w-[13.5rem] " />
+                  <img
+                    src="/people/modupe.png"
+                    className="w-[10rem] lg:w-[13.5rem] mb-0.5 "
+                  />
                 </div>
               </div>
             </div>
@@ -60,14 +63,14 @@ export default function LegalChild() {
         </div>
       </section>
 
-      <section className="pb-12">
+      <section className="pb-12 px-7">
         <div className="container">
           <div className="">
-            <div className="flex max-w-[53.8rem] mx-auto  justify-between">
-              <h2 className=" w-72 font-bold leading-5 gradient-text2">
+            <div className="flex flex-col lg:flex-row max-w-[53.8rem] mx-auto  justify-between">
+              <h2 className=" text-xl lg:text-base w-72 font-bold leading-5 gradient-text2">
                 Biography
               </h2>
-              <div className=" max-w-[31rem] text-cgray">
+              <div className=" text-sm lg:text-base max-w-[31rem] text-cgray">
                 <p>
                   A Founding Partner at Vazi, Moe&apos;s current practice
                   centers around Fundraising Advisory, Governance and
@@ -102,11 +105,11 @@ export default function LegalChild() {
               </div>
             </div>
 
-            <div className="flex max-w-[53.8rem] mx-auto  justify-between  border-b border-t py-10 mt-10">
-              <h2 className=" w-72 font-bold leading-5 gradient-text2  ">
+            <div className="flex max-w-[53.8rem] mx-auto gap-x-5  justify-between  border-b border-t py-10 mt-10">
+              <h2 className="w-72 font-bold leading-5 gradient-text2  ">
                 Education
               </h2>
-              <div className=" w-[31rem] text-cgray">
+              <div className="text-sm lg:text-base w-[31rem] text-cgray">
                 <ul>
                   <li>Lagos State University – LLB</li>
                   <li>Columbia Law School- LLM</li>
@@ -118,7 +121,7 @@ export default function LegalChild() {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-24 hidden lg:block">
         <div className="container">
           <div className="">
             <div className=" mx-auto  max-w-[53.8rem]">

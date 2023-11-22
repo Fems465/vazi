@@ -12,9 +12,9 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 w-full backdrop-blur-sm bg-[#05a6c2] z-30 fixed">
+    <header className="py-6 w-full  backdrop-blur-sm bg-[#05a6c2] z-30 fixed">
       <div className="container">
-        <nav className="relative max-w-5xl mx-auto flex flex-row px-4 items-center justify-between">
+        <nav className="relative borderS max-w-4xl mx-auto flex flex-row px-4 items-center justify-between">
           <div className="flex items-center justify-between">
             <a className="navbar-brand flex-none" href="index-1.html">
               <img src="/logo.png" className="h-6" alt="Logo" />
@@ -22,7 +22,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-5">
+          <div className="hidden lg:flex mx-auto space-x-5">
             <Link
               href={"/"}
               className="text-white text-[13px] hover:text-cyan-200 font-semibold"
@@ -73,7 +73,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="lg:hidden mt-4">
+          <div className="lg:hidden mt-4  ml-auto pr-5">
             <button
               className="text-white focus:outline-none"
               onClick={toggleMobileMenu}
@@ -94,10 +94,12 @@ const Header = () => {
               </svg>
             </button>
           </div>
-
+          <br />
           {/* Mobile Menu Items */}
+        </nav>
+        <div className=" ">
           <div
-            className={`lg:hidden mt-4 space-y-4 flex flex-col ${
+            className={`lg:hidden mt-7 space-y-4 flex text-center pr-4  flex-col ${
               isMobileMenuVisible ? "" : "hidden"
             }`}
           >
@@ -108,19 +110,39 @@ const Header = () => {
               Home
             </Link>
             <Link
-              href={"/"}
+              href={"/about"}
               className="text-white text-[13px] hover:text-cyan-200 font-semibold"
             >
-              Home
+              About
+            </Link>
+            <Link
+              href={"/services"}
+              className="text-white text-[13px] hover:text-cyan-200 font-semibold"
+            >
+              Services
+            </Link>
+
+            <Link
+              href={"/people"}
+              className="text-white text-[13px] hover:text-cyan-200 font-semibold"
+            >
+              People
+            </Link>
+
+            <Link
+              href={"/blog"}
+              className="text-white text-[13px] hover:text-cyan-200 font-semibold"
+            >
+              Blog
             </Link>
             <Link
               href={"/"}
               className="text-white text-[13px] hover:text-cyan-200 font-semibold"
             >
-              Home
+              Startup Library
             </Link>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
   );

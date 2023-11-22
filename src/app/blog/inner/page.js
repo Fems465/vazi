@@ -7,13 +7,13 @@ export default function InnerBlog() {
       <div>
         <Header />
       </div>
-      <section className="py-[12rem] pl-[17rem] ">
+      <section className="py-28">
         <div>
-          <div className="container flex  gap-x-8">
-            <div className=" max-w-[45rem] ">
+          <div className="container">
+            <div className=" max-w-[50rem] mx-auto px-7 lg:px-0">
               <Link
                 href={"/blog"}
-                className="inline-flex place-items-center gap-x-1"
+                className="inline-flex place-items-center text-sm lg:text-sm gap-x-1"
               >
                 {" "}
                 <svg
@@ -31,18 +31,18 @@ export default function InnerBlog() {
                 Blog
               </Link>
 
-              <div className="w-full rounded-lg h-[18rem] border mt-7 flex items-end px-9 py-8">
+              <div className="w-full rounded-lg h-[15rem] lg:h-[18rem] border mt-7 flex items-end px-7 lg:px-9 py-6 lg:py-8">
                 <div>
-                  <h2 className="text-3xl font-semibold">
+                  <h2 className="text-xl lg:text-3xl font-semibold">
                     How to create a Cap Table.
                   </h2>
-                  <div className="flex gap-x-2 text-sm mt-1.5">
+                  <div className="flex gap-x-2 text-xs lg:text-sm lg:mt-1.5">
                     <p className="font-semibold">2 Aug, 2023</p>
                     <p className="text-cgray">Startup guide</p>
                   </div>
                 </div>
               </div>
-              <div className="mt-14 text-sm text-[#4D747A] leading-loose">
+              <div className="mt-14 text-sm px-2 text-[#4D747A] leading-loose">
                 <p className=" ">
                   A cap table (or capitalization table) is a financial snapshot
                   of the company created using a spreadsheet that outlines the

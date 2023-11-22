@@ -18,7 +18,7 @@ export default function legalteam() {
       <section className="py-24">
         <div className="container">
           <div className="">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 mx-auto place-items-center max-w-[53.8rem]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 mx-auto place-items-center max-w-[53.8rem] ">
               {peopleData.map((person) => (
                 <PersonCard
                   key={person.id}

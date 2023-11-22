@@ -83,7 +83,7 @@ export default function blog() {
 
               <Link
                 href={"/"}
-                className="flex items-center gap-2 text-[#1193A9]"
+                className="flex items-center gap-2 text-sm lg:text-base text-[#1193A9]"
               >
                 See full article{" "}
                 <svg

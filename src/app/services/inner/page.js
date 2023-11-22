@@ -11,7 +11,7 @@ export default function Inner() {
       <div>
         <Header />
       </div>
-      <section className="pt-32 pb-20">
+      <section className="px-5 pt-32 pb-20">
         <div className="container">
           <div className="">
             <div className="max-w-[53.8rem] border mx-auto rounded-xl px-12 gradient-card2 py-8">
@@ -35,10 +35,10 @@ export default function Inner() {
               </Link>
               <div className="flex mt-6 justify-between">
                 <div className=" max-w-md">
-                  <h2 className="text-4xl font-bold gradient-text2">
+                  <h2 className="text-[1.65rem] lg:text-4xl font-bold gradient-text2">
                     Startup Advisory
                   </h2>
-                  <p className="mt-4 text-base text-[#6F898C]">
+                  <p className="mt-4 text-sm lg:text-base text-[#6F898C]">
                     At Vazi, we are the go-to legal advisory for global
                     startups, specialising in early-stage and growth-oriented
                     companies to drive operational and legal excellence. With
@@ -47,7 +47,7 @@ export default function Inner() {
                     committed to your venture&apos;s success.
                   </p>
                 </div>
-                <div className=" self-center">
+                <div className="hidden lg:block self-center">
                   <img src="/icons/startupgr.svg" className="w-[14rem]" />
                 </div>
               </div>
@@ -56,15 +56,15 @@ export default function Inner() {
         </div>
       </section>
 
-      <section className="pb-12">
+      <section className="pb-12 px-5">
         <div className="container">
           <div className="">
-            <div className="flex max-w-[53.8rem] mx-auto  justify-between">
-              <h2 className=" w-72 font-bold leading-5 gradient-text2">
+            <div className="flex flex-col lg:flex-row max-w-[53.8rem] mx-auto px-5  justify-between">
+              <h2 className=" w-72 font-bold leading-5 gradient-text">
                 How We Navigate the Complex Legal Landscape of Startup Advisory
               </h2>
               <div className=" max-w-[31rem]">
-                <ul className="list-disc leading-6 text-cgray">
+                <ul className="list-disc text-sm lg:text-base leading-6 text-cgray">
                   <li>
                     Mastering the intricacies of complex capital structures,
                     investment terms, and equity arrangements joint in
@@ -82,12 +82,12 @@ export default function Inner() {
                 </ul>
               </div>
             </div>
-            <div className="flex max-w-[53.8rem] mx-auto mt-12 justify-between">
-              <h2 className=" w-72 font-bold leading-5 gradient-text2">
+            <div className="flex flex-col lg:flex-row max-w-[53.8rem] mx-auto mt-12 px-5 justify-between">
+              <h2 className=" w-72 font-bold  gradient-text3 mb-1">
                 Why Choose Vazi?
               </h2>
               <div className=" max-w-[31rem]">
-                <ul className="list-disc  leading-6 text-cgray">
+                <ul className="list-disc text-sm lg:text-base leading-6 text-cgray">
                   <li>
                     Unrivaled expertise in the African startup scene, grounded
                     in local insights and a global perspective.
@@ -109,12 +109,12 @@ export default function Inner() {
                 </ul>
               </div>
             </div>
-            <div className="flex max-w-[53.8rem] mx-auto mt-12 justify-between ">
-              <h2 className=" w-72 font-bold leading-5 gradient-text2">
+            <div className="flex flex-col lg:flex-row max-w-[53.8rem] mx-auto mt-12 px-5 justify-between ">
+              <h2 className=" w-72 font-bold leading-5 gradient-text3 mb-1">
                 Key services
               </h2>
               <div className=" max-w-[31rem] ">
-                <ul className="list-disc leading-6 text-cgray">
+                <ul className="list-disc text-sm leading-6 text-cgray">
                   <li>
                     <strong>Legal Structuring and Compliance:</strong> Crafting
                     the legal frameworks that underpin your startup’s operations
@@ -150,12 +150,12 @@ export default function Inner() {
         </div>
       </section>
 
-      <section className="pb-24">
+      <section className="pb-24 px-5">
         <div className="container">
           <div className="">
             <div className=" mt-10  max-w-[53.8rem]  mx-auto  items-center overflow-hidden">
               <div className="flex gap-6 items-center mb-5">
-                <h2 className="font-bold text-[#0a6170af]">
+                <h2 className="font-bold w-[35rem] lg:w-auto text-[#0a6170af] ">
                   Other practice areas
                 </h2>
                 <svg

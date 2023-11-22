@@ -10,11 +10,11 @@ const PersonCard = ({ person }) => {
   const defaultHref = `/people/${name.toLowerCase().replace(/\s+/g, "-")}`;
 
   const cardContent = (
-    <div className="w-[22rem] lg:w-[16.5rem] mx-auto ">
+    <div className="w-[20rem] lg:w-[16.5rem] mx-auto ">
       <div className=" gradient-card3 lg:h-[18.6rem] flex rounded-t-lg">
         <img
           src={imageSrc}
-          className="self-end lg:w-[13.5rem] mx-auto"
+          className="self-end w-[11.5rem] pt-5 lg:pt-0 lg:w-[13.5rem] mx-auto"
           alt={name}
         />
       </div>
