@@ -29,9 +29,9 @@ const HeroSection = ({
         </div>
       </div>
 
-      <section className=" w-[100%] h-full  flex items-center justify-center ">
-        <div className="container">
-          <div className="text-center max-w-xs  lg:max-w-4xl  mx-auto">
+      <section className=" w-[100%] h-full  flex items-center justify-center border ">
+        <div className="container  ">
+          <div className="text-center max-w-xs   mt-20 lg:max-w-4xl  mx-auto">
             <h1
               className={` ${titlesize} text-hero font-hero gradient-hero text-white font-medium`}
             >

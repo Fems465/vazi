@@ -23,38 +23,23 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex mx-auto space-x-5">
-            <Link
-              href={"/"}
-              className="text-white text-[13px] hover:text-cyan-200 font-semibold"
-            >
+            <Link href={"/"} className="alink">
               Home
             </Link>
-            <img src="/ellipse.svg" className="w-1  inline-flex" />
-            <Link
-              href={"/about"}
-              className="text-white text-[13px] hover:text-cyan-200 font-semibold"
-            >
+            <img src="/ellipse.svg" className="w-[3px]  inline-flex" />
+            <Link href={"/about"} className="alink">
               About
             </Link>
-            <img src="/ellipse.svg" className="w-1  inline-flex" />
-            <Link
-              href={"/services"}
-              className="text-white text-[13px] hover:text-cyan-200 font-semibold"
-            >
+            <img src="/ellipse.svg" className="w-[3px]  inline-flex" />
+            <Link href={"/services"} className="alink">
               Services
             </Link>
-            <img src="/ellipse.svg" className="w-1  inline-flex" />
-            <Link
-              href={"/people"}
-              className="text-white text-[13px] hover:text-cyan-200 font-semibold hover:underline underline-offset-4"
-            >
+            <img src="/ellipse.svg" className="w-[3px]  inline-flex" />
+            <Link href={"/people"} className="alink">
               People
             </Link>
-            <img src="/ellipse.svg" className="w-1  inline-flex" />
-            <Link
-              href={"/blog"}
-              className="text-white text-[13px] hover:text-cyan-200 font-semibold hover:underline underline-offset-4"
-            >
+            <img src="/ellipse.svg" className="w-[3px] inline-flex" />
+            <Link href={"/blog"} className="alink">
               Blog
             </Link>
           </div>
