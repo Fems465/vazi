@@ -86,7 +86,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className="  mt-10  w-[24rem] md:w-[48rem] lg:w-[58rem] xl:w-[70rem]  mx-auto  items-center overflow-hidden">
+          <div className="  mt-10  w-[24rem] md:w-[48rem] lg:w-[58rem] xl:w-[67rem]   mx-auto  items-center ">
             <CardCarousel cards={cards} />
           </div>
         </div>
@@ -122,11 +122,11 @@ export default function Home() {
             </linearGradient>
           </defs>
         </svg>
-        <section className="w-full text-center max-h-fit pt-[13%] align-middle">
+        <section className="w-full text-center max-h-fit pt-[8%] xl:pt-[7%] align-middle">
           <div className="">
             <div className="container">
               <Fade big cascade>
-                <div className="w-auto text-small lg:max-w-4xl mx-auto text-center mb-8 lg:mb-24">
+                <div className="w-auto  text-small lg:max-w-4xl mx-auto text-center mb-8 lg:mb-24">
                   <span className="text-white  lg:text-3xl font-bold">
                     Vazi is the foremost tech law firm based in <br /> Nigeria
                     and the United States. We offer a personalised <br />
@@ -211,7 +211,7 @@ export default function Home() {
                 </svg>
               </div>
             </Fade>
-            <Fade left>
+            <Fade right>
               <div className="px-[5%] py-4 max-w-[100%] mx-auto lg:my-6 flex gap-4 lg:gap-0 items-center justify-between  overflow-hidden">
                 <Marquee speed={80} pauseOnHover={true} autoFill={true}>
                   <div className="pl-10 flex gap-x-16">

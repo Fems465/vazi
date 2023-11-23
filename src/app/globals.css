@@ -56,7 +56,7 @@ body {
 }
 
 .active {
-  @apply relative  text-[13px] transition duration-500 text-white font-medium no-underline after:absolute after:block after:left-1/4 after:right-1/4  after:border after:border-white after:bottom-[-3px];
+  @apply relative  text-[13px] transition duration-200 text-white font-medium no-underline after:absolute after:block after:left-1/4 after:right-1/4  after:border after:border-white after:bottom-[-3px];
 }
 
 
@@ -69,7 +69,7 @@ body {
 }
 
 .alink {
-  @apply relative text-[#A7F4FF] text-[13px] transition duration-500 hover:text-white font-medium hover:no-underline hover:after:absolute hover:after:block hover:after:left-1/4 hover:after:right-1/4  hover:after:border hover:after:border-white hover:after:bottom-[-3px];
+  @apply relative text-[#A7F4FF] text-[13px] transition duration-200 hover:text-white ;
 }
 
 .textgreen{
