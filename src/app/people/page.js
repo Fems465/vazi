@@ -23,7 +23,7 @@ export default function legalteam() {
                 <PersonCard
                   key={person.id}
                   person={person}
-                  href={"/custom-url"}
+                  href={"/modupe-odele"}
                 />
               ))}
             </div>

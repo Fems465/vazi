@@ -52,13 +52,13 @@ const Header = () => {
             >
               People
             </Link>
-            <img src="/ellipse.svg" className="w-[3px] inline-flex" />
+            {/* <img src="/ellipse.svg" className="w-[3px] inline-flex" />
             <Link
               href={"/blog"}
               className={pathname === "/blog" ? "active" : "" + "alink"}
             >
               Blog
-            </Link>
+            </Link> */}
           </div>
 
           {/* Desktop Menu - Startup Library */}
@@ -131,12 +131,12 @@ const Header = () => {
               People
             </Link>
 
-            <Link
+            {/* <Link
               href={"/blog"}
               className="text-white text-[13px] hover:text-cyan-200 font-semibold"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               href={"/"}
               className="text-white text-[13px] hover:text-cyan-200 font-semibold"

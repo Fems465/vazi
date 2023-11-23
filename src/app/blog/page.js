@@ -3,7 +3,44 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import BlogPost from "@/components/BlogPost";
 
-export default function blog() {
+async function getData() {
+  const res = await fetch("https://vazilegal.com/graphql", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    cache: "no-store",
+    body: JSON.stringify({
+      query: `
+         query HomePageQuery {
+       posts(first: 8) {
+       nodes {
+        id
+        slug
+        title
+        content
+        commentCount
+        date
+         comments{
+          nodes{
+            content
+          }
+        }
+        featuredImage{
+          node{
+            sourceUrl
+          }
+        }
+			}
+  	}
+	}
+          `,
+    }),
+  });
+
+  const json = await res.json();
+  return json.data.posts.nodes;
+}
+
+export default async function blog() {
   return (
     <main className="bg-wave">
       <div className="">
@@ -83,7 +120,7 @@ export default function blog() {
 
               <Link
                 href={"/"}
-                className="flex items-center gap-2 text-sm lg:text-base text-[#1193A9]"
+                className="flex items-center gap-2 text-[#1193A9]"
               >
                 See full article{" "}
                 <svg
@@ -165,14 +202,7 @@ export default function blog() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[58.8rem] mx-auto  gap-5">
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
+            <BlogPost posts={await getData()} />
           </div>
         </div>
       </section>
