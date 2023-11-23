@@ -63,7 +63,7 @@ const CardCarousel = ({ cards, slidesToShow }) => {
           ))}
         </Slider>
       </div>
-      <div className=" w-full absolute top-1/2 left-[52%] transform -translate-x-1/2 -translate-y-1/2 flex justify-end">
+      <div className="hidden lg:flex w-full absolute top-1/2 left-[52%] transform -translate-x-1/2 -translate-y-1/2  justify-end">
         <button
           onClick={goToNext}
           className="gradient-button text-white py-2 px-2.5 rounded-full"

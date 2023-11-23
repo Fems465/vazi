@@ -5,7 +5,7 @@ import ButtonOne from "./ButtonOne";
 export default function Footer() {
   return (
     <>
-      <footer className="py-24 bg-[#003840]  relative">
+      <footer className="py-24 bg-[#003840] overflow-hidden relative">
         <div className="container ">
           <div className="text-center  max-w-[366px]  mx-auto mb-10">
             <h1 className="text-[1.3rem] lg:text-3xl text-white font-bold">

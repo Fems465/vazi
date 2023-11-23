@@ -153,7 +153,7 @@ export default function Inner() {
       <section className="pb-24 px-5">
         <div className="container">
           <div className="">
-            <div className=" mt-10  max-w-[53.8rem]  mx-auto  items-center overflow-hidden">
+            <div className=" mt-10  max-w-[53.8rem]  mx-auto  items-center ">
               <div className="flex gap-6 items-center mb-5">
                 <h2 className="font-bold w-[35rem] lg:w-auto text-[#0a6170af] ">
                   Other practice areas

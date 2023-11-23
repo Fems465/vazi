@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container">
         <nav className="relative borderS max-w-4xl mx-auto flex flex-row px-4 items-center justify-between">
           <div className="flex items-center justify-between">
-            <a className="navbar-brand flex-none" href="index-1.html">
+            <a className="navbar-brand flex-none" href="/">
               <img src="/logo.png" className="h-6" alt="Logo" />
             </a>
           </div>

@@ -86,7 +86,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className="  mt-10  w-[24rem] md:w-[48rem] lg:w-[58rem] xl:w-[67rem]   mx-auto  items-center ">
+          <div className="  mt-10 px-5 w-full md:w-[48rem] lg:w-[58rem] xl:w-[67rem] overflow-hidden lg:overflow-visible  mx-auto  items-center ">
             <CardCarousel cards={cards} />
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Home() {
             <Fade right>
               <div className="px-[5%] py-4 max-w-[100%] mx-auto lg:my-6 flex gap-4 lg:gap-0 items-center justify-between  overflow-hidden">
                 <Marquee speed={80} pauseOnHover={true} autoFill={true}>
-                  <div className="pl-10 flex gap-x-16">
+                  <div className="pl-10 flex gap-x-12 xl:gap-x-16">
                     <BrandImages logos={brandData} />
                   </div>
                 </Marquee>
@@ -340,7 +340,11 @@ export default function Home() {
             </div>
             <Fade top>
               <div className="px-[10%] max-w-[100%] mx-auto flex mb-3 justify-center items-center gap-8 lg:gap-16 overflow-hidden">
-                <BrandImages logos={featuredData} />
+                <Marquee speed={80} pauseOnHover={true} autoFill={true}>
+                  <div className="flex gap-x-10 mr-5">
+                    <BrandImages logos={featuredData} />
+                  </div>
+                </Marquee>
               </div>
             </Fade>
             <div className="  flex justify-center items-center">

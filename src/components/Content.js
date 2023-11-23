@@ -21,7 +21,7 @@ const Content = ({
         </h2>
       </div>
 
-      <div className=" px-7 max-w-[45rem] lg:h-fit place-content-center items-center flex mx-auto bg-gradient-to-br from-slate-50 to-slate-200 rounded-lg border border-gray-200">
+      <div className=" px-7 max-w-[24rem] xl:max-w-[45rem] lg:h-fit place-content-center items-center flex mx-auto bg-gradient-to-br from-slate-50 to-slate-200 rounded-lg border border-gray-200">
         <div className="my-10 lg:my-20 text-center text-[.8rem] lg:text-[1.3rem] mx-2 lg:mx-[4.5rem] leading-tight">
           <p className="text-gray-500    font-semibold mb-4">
             {subtitle1}{" "}

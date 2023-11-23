@@ -2,18 +2,18 @@
 import Link from "next/link";
 
 const Card = ({ title, imageUrl, link }) => (
-  <div className="w-[11rem] mx-auto lg:mx-auto xl:w-[195px] gradient-card rounded-2xl  pt-4 pb-4 text-left font-stark border">
-    <div className="pl-4 pr-6">
-      <img src={imageUrl} className="w-10 mb-4 mt-7" alt="Icon" />
-      <h3 className=" leading-none tracking-tight lg:leading-tight text-[1.05rem] lg:text-[19px] font-extrabold mb-1  lg:mb-5 gradient-text ">
+  <div className="w-[9.7rem] mx-auto lg:mx-auto xl:w-[195px] xl:h-[13rem] gradient-card rounded-2xl pt-2 pb-3 xl:pt-4 xl:pb-4 text-left font-stark border">
+    <div className="pl-4 pr-4">
+      <img src={imageUrl} className="w-8 xl:w-10 mb-4 mt-7" alt="Icon" />
+      <h3 className=" leading-none tracking-tight lg:leading-tight text-[0.96rem] xl:text-[19px] font-extrabold mb-1  lg:mb-5 gradient-text ">
         {title}
       </h3>
     </div>
-    <div className="pl-3">
+    <div className="pl-2 pb-1.5">
       <Link
         href={link}
         passHref
-        className="text-xs  text-slate-400 bg-[#feb20111] rounded-lg hover:from-[#0037402d] hover:to-[#5bcedf5b] pl-2 pr-[6rem] lg:pr-[7.4rem] py-1.5"
+        className="text-xs  text-slate-400 bg-[#feb20111] rounded-lg hover:from-[#0037402d] hover:to-[#5bcedf5b] pl-1.5 xl:pl-2 pr-[5.5rem] xl:pr-[7.4rem] py-3"
       >
         More{" "}
         <svg
