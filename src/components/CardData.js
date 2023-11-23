@@ -38,5 +38,5 @@ export const cards = [
 ];
 
 cards.forEach((card, index) => {
-  card.fadeDuration = index * 200; // Set fadeDuration with a 200-millisecond difference
+  card.fadeDuration = index * 300; // Set fadeDuration with a 200-millisecond difference
 });
