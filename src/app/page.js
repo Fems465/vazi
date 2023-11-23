@@ -14,7 +14,6 @@ import BrandImages from "@/components/BrandImages";
 import featuredData from "@/components/data/featuredData";
 import Marquee from "react-fast-marquee";
 import Fade from "react-reveal/Fade";
-import Reveal from "react-reveal/Reveal";
 
 export default function Home() {
   return (
