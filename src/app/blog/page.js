@@ -85,7 +85,7 @@ export default async function blog() {
                 <div className="hidden lg:block">
                   <Link
                     href={"/"}
-                    className="flex items-center gap-x-2 textglink font-semibold"
+                    className=" text-xs lg:text-base flex items-center gap-x-2 textglink font-semibold"
                   >
                     {" "}
                     <svg
@@ -109,7 +109,7 @@ export default async function blog() {
                   </Link>
                 </div>
               </div>
-              <h2 className="text-2xl lg:text-3xl text-[#027889] font-bold mb-5">
+              <h2 className="text-xl lg:text-3xl text-[#027889] font-bold mb-5">
                 The Nigerian Startup Ecosystem{" "}
               </h2>
               <p className="max-w-[18rem] lg:max-w-[41rem] text-sm lg:text-base mb-8">
@@ -120,7 +120,7 @@ export default async function blog() {
 
               <Link
                 href={"/"}
-                className="flex items-center gap-2 text-[#1193A9]"
+                className="text-sm lg:text-base flex items-center gap-2 text-[#1193A9]"
               >
                 See full article{" "}
                 <svg
@@ -148,7 +148,7 @@ export default async function blog() {
             </h3>
             <div className="flex flex-col lg:flex-row gap-y-4 justify-between lg:items-center">
               <div>
-                <div className="flex gap-x-4 text-sm text-[#8EB3B9]">
+                <div className="flex gap-x-4 text-xs lg:text-sm text-[#8EB3B9]">
                   <Link href={"/"} className="hover:text-[#334B4F]">
                     Startup Guide
                   </Link>
@@ -161,7 +161,7 @@ export default async function blog() {
                 </div>
               </div>
               <div>
-                <div className="relative flex justify-between items-center w-[23rem]">
+                <div className="relative flex justify-between items-center w-[21rem] lg:w-[23rem]">
                   <div className="absolute left-0 p-3">
                     <svg
                       width="14"
@@ -201,7 +201,7 @@ export default async function blog() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[58.8rem] mx-auto  gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[56.8rem] mx-auto  gap-y-5">
             <BlogPost posts={await getData()} />
           </div>
         </div>

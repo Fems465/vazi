@@ -16,7 +16,7 @@ const ButtonOne = ({ href, buttontext }) => {
   };
 
   return (
-    <Link href={"/"}>
+    <Link href={"/contact-us"}>
       <motion.span
         variants={linkVariants}
         whileHover="hover"

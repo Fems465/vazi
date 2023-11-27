@@ -1,5 +1,4 @@
 // components/BlogPost.js
-"use client";
 
 import Link from "next/link";
 import { convert } from "html-to-text";
@@ -27,16 +26,20 @@ const BlogPost = ({ posts }) => {
         return (
           <div
             key={post.slug}
-            className="max-w-[30rem] bg-[#FBFBFB] border rounded-xl pt-8 pb-3"
+            className="w-[21rem] lg:w-[27rem] bg-[#FBFBFB] border rounded-xl pt-8 pb-3 "
           >
             <div className="px-6">
-              <div className="flex gap-4 text13">
+              <div className="flex gap-4 text-xs lg:text13">
                 <p>{formattedDate}</p>
                 <p>Category</p>
                 <p>{count} Comments</p>
               </div>
-              <h2 className="text-xl font-bold mt-7 textgreen">{post.title}</h2>
-              <p className="text-sm w-[21rem] mt-8 textgray">{text + "..."}</p>
+              <h2 className=" lg:text-xl font-bold mt-7 textgreen lg:h-[2rem]">
+                {post.title}
+              </h2>
+              <p className="text-xs lg:text-sm w-[17rem] lg:w-[21rem] mt-8 textgray">
+                {text + "..."}
+              </p>
               <Link
                 href={href}
                 className="flex gap-2 items-center text13 mt-10 textglink"
@@ -59,7 +62,7 @@ const BlogPost = ({ posts }) => {
             <div className="relative rounded-lg overflow-hidden mx-3 mt-8 ">
               <img
                 src={post.featuredImage.node.sourceUrl}
-                className="mx-auto w-full h-auto"
+                className="mx-auto w-full h-[10rem] lg:h-[12rem]"
                 alt="Blog Image"
               />
               <div className="absolute inset-0 gradient-blogpost opacity-50 rounded-lg"></div>

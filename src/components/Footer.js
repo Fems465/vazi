@@ -16,7 +16,7 @@ export default function Footer() {
               best-suited solution to fulfill them.
             </p>
 
-            <ButtonOne href="/custom-link" buttontext="Contact Us" />
+            <ButtonOne href="/contact-us" buttontext="Contact Us" />
           </div>
 
           <div className=" w-[70%]  mx-auto">

@@ -19,7 +19,11 @@ export default function Home() {
   return (
     <main className="">
       <div>
-        <HeroSection title="Powering Innovation with" cspan="legal expertise" />
+        <HeroSection
+          title="Powering Innovation with"
+          cspan="legal expertise"
+          isSpecialPage
+        />
       </div>
 
       <section className=" w-full text-center max-h-fit mt-[5%] align-middle ">
