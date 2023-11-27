@@ -14,7 +14,7 @@ export default function contactUs() {
           <div className="flex border max-w-[54.8rem] gap-x-4 items-start  mx-auto">
             <div className="border max-w-[16rem] px-6 pt-6 pb-10 rounded-xl">
               <h2 className="text-2xl font-bold w-[12rem]">
-                We'd love to help you!
+                We&apos;d love to help you!
               </h2>
               <p className="text-xs mt-[250px]">
                 Let us know the needs of your business, and we will pinpoint the
