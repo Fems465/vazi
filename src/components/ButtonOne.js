@@ -8,8 +8,8 @@ const ButtonOne = ({ href, buttontext }) => {
   const linkVariants = {
     hover: {
       backgroundImage: [
-        "linear-gradient(to right, #e9ca87, #bd9540, #003840)",
-        "linear-gradient(to right, #0037402d, #5bcedf5b)",
+        "linear-gradient(to right, #014E5B, #014E5B, #014E5B)",
+        "linear-gradient(to right, #00DAFF, #014E5B)",
       ],
     },
     transition: { duration: 1.5 },
@@ -20,7 +20,7 @@ const ButtonOne = ({ href, buttontext }) => {
       <motion.span
         variants={linkVariants}
         whileHover="hover"
-        className="bg-gradient-to-r from-[#e9ca87] via-[#bd9540] to-[#003840] px-[6.5rem] lg:px-[9rem] py-2 rounded-full text-xs text-white font-semibold"
+        className=" bg-[#014E5B] bg-gradient-to-r from-[#00DAFF] to-[#014E5B] px-[6.5rem] lg:px-[13rem] py-5 rounded-full text-sm text-white font-semibold"
       >
         {buttontext}
       </motion.span>

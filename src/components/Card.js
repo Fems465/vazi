@@ -4,9 +4,9 @@ import Fade from "react-reveal/Fade";
 
 const Card = ({ title, imageUrl, link, fadeDuration }) => (
   <Fade delay={fadeDuration}>
-    <div className="w-[9.7rem] mx-auto lg:mx-auto xl:w-[195px] xl:h-[13rem] gradient-card rounded-2xl pt-2 pb-3 xl:pt-4 xl:pb-4 text-left font-stark border">
-      <div className="pl-4 pr-4">
-        <img src={imageUrl} className="w-8 xl:w-10 mb-4 mt-7" alt="Icon" />
+    <div className="w-[9.7rem] mx-auto lg:mx-auto xl:w-[195px] xl:h-[13rem] gradient-card4 rounded-2xl pt-2 pb-3 xl:pt-4 xl:pb-4 text-left font-stark border">
+      <div className="pl-4 pr-4 h-[8rem]">
+        <img src={imageUrl} className="w-8 xl:w-10 mb-4 mt-6" alt="Icon" />
         <h3 className=" leading-none tracking-tight lg:leading-tight text-[0.96rem] xl:text-[19px] font-extrabold mb-1  lg:mb-5 gradient-text ">
           {title}
         </h3>
@@ -15,7 +15,7 @@ const Card = ({ title, imageUrl, link, fadeDuration }) => (
         <Link
           href={link}
           passHref
-          className="text-xs  text-slate-400 bg-[#feb20111] rounded-lg hover:from-[#0037402d] hover:to-[#5bcedf5b] pl-1.5 xl:pl-2 pr-[5.5rem] xl:pr-[7.4rem] py-3"
+          className="text-xs transition duration-700 ease-in-out text-white bg-gradient-to-r from-[#0A6070] to-[#8EA6AA] rounded-lg hover:from-[#FEB003] hover:to-[#FFF0CD] pl-1.5 xl:pl-2 pr-[5.5rem] xl:pr-[8rem] py-3"
         >
           More{" "}
           <svg

@@ -36,8 +36,8 @@ module.exports = {
         basic: "#003E48",
         primary: "#4FA0AE",
         secondary: "#FEB101",
-        sub: "#B3B3B3",
-        cgray: "#6F898C",
+        sub: "#7E7E7E",
+        cgray: "#487A81",
       },
 
       backgroundImage: {
@@ -45,6 +45,9 @@ module.exports = {
         curve: "url('/curve.svg')",
         noise: "url('/noise.svg')",
         wave: "url('/waves.svg')",
+        lines: "url('/bg-3.svg')",
+        lines2: "url('/bg-4.svg')",
+        footer1: "url('/footer-1.svg')",
       },
 
       fontFamily: {

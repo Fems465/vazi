@@ -67,7 +67,7 @@ export default function LegalChild() {
         <div className="container">
           <div className="">
             <div className="flex flex-col lg:flex-row max-w-[53.8rem] mx-auto  justify-between">
-              <h2 className=" text-xl lg:text-base w-72 font-bold leading-5 gradient-text2">
+              <h2 className=" text-xl lg:text-base w-72 font-bold leading-5 gradient-text">
                 Biography
               </h2>
               <div className=" text-sm lg:text-base max-w-[31rem] text-cgray">
@@ -106,7 +106,7 @@ export default function LegalChild() {
             </div>
 
             <div className="flex max-w-[53.8rem] mx-auto gap-x-5  justify-between  border-b border-t py-10 mt-10">
-              <h2 className="w-72 font-bold leading-5 gradient-text2  ">
+              <h2 className="w-72 font-bold leading-5 gradient-text">
                 Education
               </h2>
               <div className="text-sm lg:text-base w-[31rem] text-cgray">

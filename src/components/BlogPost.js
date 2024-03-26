@@ -1,5 +1,5 @@
 // components/BlogPost.js
-
+"use client";
 import Link from "next/link";
 import { convert } from "html-to-text";
 
@@ -21,7 +21,7 @@ const BlogPost = ({ posts }) => {
         if (post.commentCount) {
           count = post.commentCount;
         }
-        const href = `/blog/inner?id=${post.id}`;
+        const href = `${post.slug}/`;
 
         return (
           <div

@@ -35,7 +35,7 @@ export default function Inner() {
               </Link>
               <div className="flex mt-6 justify-between">
                 <div className=" max-w-md">
-                  <h2 className="text-[1.65rem] lg:text-4xl font-bold gradient-text2">
+                  <h2 className="text-[1.65rem] lg:text-4xl font-bold gradient-text">
                     Startup Advisory
                   </h2>
                   <p className="mt-4 text-sm lg:text-base text-[#6F898C]">
@@ -114,7 +114,7 @@ export default function Inner() {
                 Key services
               </h2>
               <div className=" max-w-[31rem] ">
-                <ul className="list-disc text-sm leading-6 text-cgray">
+                <ul className="list-disc leading-6 text-cgray">
                   <li>
                     <strong>Legal Structuring and Compliance:</strong> Crafting
                     the legal frameworks that underpin your startup’s operations
@@ -139,7 +139,7 @@ export default function Inner() {
                 <div className="mt-5">
                   <Link
                     href={"/"}
-                    className=" text-left border-[#e9ca871f] bg-gradient-to-r from-[#FDDE99] to-[#FEB101] hover:from-[#0037402d] hover:to-[#5bcedf5b] px-5 py-1.5 rounded-md text-xs text-white font-semibold"
+                    className=" text-left border-[#e9ca871f] bg-gradient-to-r from-[#FDDE99] to-[#FEB101] hover:from-[#0037402d] hover:to-[#5bcedf5b] px-5 py-2.5 rounded-md text-xs text-white font-semibold"
                   >
                     Talk to our Startup Advisory Team
                   </Link>

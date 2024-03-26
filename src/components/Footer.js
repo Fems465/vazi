@@ -5,20 +5,19 @@ import ButtonOne from "./ButtonOne";
 export default function Footer() {
   return (
     <>
-      <footer className="py-24 bg-[#003840] overflow-hidden relative">
+      <footer className="py-24 bg-[#001D20] bg-footer1  overflow-hidden relative">
         <div className="container ">
-          <div className="text-center  max-w-[366px]  mx-auto mb-10">
-            <h1 className="text-[1.3rem] lg:text-3xl text-white font-bold">
+          <div className="text-center  max-w-[600px]  mx-auto mb-10">
+            <h1 className="text-[1.3rem] lg:text-[2.7rem] text-white font-bold mb-8">
               Start leading with Vazi
             </h1>
-            <p className="w-2/3 lg:w-auto mx-auto font-medium text-[10px] lg:text-xs text-[#A4B1B2] mt-1 mb-6 ">
-              Let us know the needs of your business, and we will pinpoint the
-              best-suited solution to fulfill them.
-            </p>
 
             <ButtonOne href="/contact-us" buttontext="Contact Us" />
           </div>
-
+        </div>
+      </footer>
+      <section className="mt-10">
+        <div className="container">
           <div className=" w-[70%]  mx-auto">
             <hr className="border-t border-neutral-400" />
             <div className="flex flex-col lg:flex-row gap-y-2 justify-between mt-1 lg:mt-6">
@@ -43,8 +42,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </section>
+      <section>
         <div className=" mt-10 ">
-          <div className="inset-y-[22rem] absolute inset-x-0">
+          <div className="">
             <img
               src="/lines-footer.svg"
               alt=""
@@ -52,7 +53,7 @@ export default function Footer() {
             />
           </div>
         </div>
-      </footer>
+      </section>
     </>
   );
 }

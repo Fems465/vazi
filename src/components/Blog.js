@@ -4,6 +4,7 @@ import Link from "next/link";
 import ReactHtmlParser from "react-html-parser";
 
 export default function Blog({ post }) {
+  console.log(post.featuredImage.node.sourceUrl);
   const originalDate = new Date(post.date);
   const options = { year: "numeric", month: "short", day: "numeric" };
 
@@ -41,6 +42,7 @@ export default function Blog({ post }) {
 
               <div className="w-full rounded-lg h-[18rem] border mt-7 flex items-end px-9 py-8">
                 <div>
+                  <img src={post.featuredImage.node.sourceUrl} />
                   <h2 className="text-3xl font-semibold">{post.title}</h2>
                   <div className="flex gap-x-2 text-sm mt-1.5">
                     <p className="font-semibold">{formattedDate}</p>

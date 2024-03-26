@@ -37,6 +37,8 @@ async function getData() {
   });
 
   const json = await res.json();
+
+  console.log(json.data.posts.nodes);
   return json.data.posts.nodes;
 }
 

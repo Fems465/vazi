@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 w-full  backdrop-blur-sm bg-[#05a6c2] z-30 fixed">
+    <header className="py-6 w-full  backdrop-blur-sm bg-[#001D20] z-30 fixed">
       <div className="container">
         <nav className="relative borderS max-w-4xl mx-auto flex flex-row px-4 items-center justify-between">
           <div className="flex items-center justify-between">
@@ -66,7 +66,7 @@ const Header = () => {
             <div className="py-2 px-3 hover:bg-opacity-0 transition duration-300  bg-white bg-opacity-10 rounded-[16.93px]  border-[#5ac8d98c] border-2  justify-center items-center gap-1 inline-flex">
               {" "}
               <Link
-                href={"/"}
+                href={"/library"}
                 className="text-center text-cyan-100 text-xs font-semibold  capitalize"
               >
                 Startup Library

@@ -24,7 +24,7 @@ const HeroSection = ({
   }, []);
 
   return (
-    <div className="bg-hero bg-cover bg-center  w-full h-[24rem] lg:h-[48rem]  relative overflow-clip">
+    <div className="bg-[#001D20] w-full h-[24rem] lg:h-[48rem]  relative overflow-clip">
       <Header />
 
       <div className="hidden lg:block ">

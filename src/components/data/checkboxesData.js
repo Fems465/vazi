@@ -9,6 +9,6 @@ export const checkboxesData = [
   { id: "checkbox1", name: "checkbox1", label: "Document Preparation" },
   { id: "checkbox1", name: "checkbox1", label: "Retainer" },
   { id: "checkbox1", name: "checkbox1", label: "Consultation" },
-  { id: "checkbox1", name: "checkbox1", label: "Others" },
+  { id: "checkbox1", name: "checkbox1", label: "Others  " },
   // Add more checkbox data as needed
 ];

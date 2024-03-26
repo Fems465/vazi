@@ -1,12 +1,13 @@
 "use client";
 import Header from "@/components/Header";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Blog from "@/components/Blog";
 
 export default async function InnerBlog() {
-  const searchParams = useSearchParams();
-  const idBlog = searchParams.get("id");
+  const name = usePathname();
+  console.log(name);
+
   async function getData() {
     const res = await fetch("https://vazilegal.com/graphql", {
       method: "POST",
@@ -14,34 +15,36 @@ export default async function InnerBlog() {
       cache: "no-store",
       body: JSON.stringify({
         query: `
-         query post($id: ID! = "${idBlog}") {
-       post(id: $id){
-      	title
-        content
-        commentCount
-        date
-         comments{
-          nodes{
+           query post{
+         posts(where: {name: "${name}"}){
+           nodes{
+            title
             content
+            commentCount
+            date
+             comments{
+              nodes{
+                content
+              }
+            }
+            featuredImage{
+              node{
+                sourceUrl
+              }
+            }
+           }
           }
-        }
-        featuredImage{
-          node{
-            sourceUrl
-          }
-        }
       }
-    }
-        `,
+          `,
       }),
     });
 
     const json = await res.json();
-    return json.data.post;
+
+    return json.data.posts.nodes[0];
   }
   const data = await getData();
-  // const search = searchParams.get('id');
-  // console.log(search);
+
   return (
     <main>
       <div>
